@@ -427,6 +427,7 @@ footer a{color:var(--fg-2)}
       <div class="filters" id="filters" role="group" aria-label="Filter sources"></div>
     </div>
     <div class="grid g-sources" id="sources-grid"></div>
+    <p class="sub">With Jellyfin as the default provider, reopen cliamp without files, URLs, or a playlist to restore the last track, position, and complete source list. Queued tracks keep their own album context. Press <kbd>Enter</kbd> to resume; restored sessions stay silent even with <code>auto_play</code>. Playback is checkpointed every two seconds and on normal exit, without saving unfinished seeks. Stream URLs use current API-key or password authentication when playback starts. <a href="https://github.com/bjarneo/cliamp/blob/main/docs/jellyfin.md">Jellyfin guide</a>.</p>
   </section>
 
   <!-- ═══ FEATURES ═══ -->
@@ -651,7 +652,7 @@ var SOURCES=[
   {name:"Bandcamp",kind:"streaming",note:"paste a URL · yt-dlp"},
   {name:"Bilibili",kind:"streaming",note:"video audio · yt-dlp"},
   {name:"Plex",kind:"self-hosted",note:"server token"},
-  {name:"Jellyfin",kind:"self-hosted",note:"API key · gapless"},
+  {name:"Jellyfin",kind:"self-hosted",note:"API key / password, gapless, resume"},
   {name:"Emby",kind:"self-hosted",note:"API key"},
   {name:"Navidrome",kind:"self-hosted",note:"Subsonic API · lyrics"},
   {name:"Lyrion",kind:"self-hosted",note:"LMS"},
